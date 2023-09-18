@@ -1,0 +1,55 @@
+.root {
+
+  
+  .crypto_operation__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 26px;
+    .crypto_operation__left {
+      display: flex;
+      align-items: center;
+      position: relative;
+      cursor: pointer;
+    }
+    .drop_arrow {
+      scale: 1.6;
+      position: absolute;
+      top: 8px;
+      right: -20px;
+    }
+  }
+  .crypto_operation__count {
+    font-size: 26px;
+  }
+  
+  .crypto_operation__crypto {
+    font-size: 26px;
+    font-weight: 600;
+    margin-left: 6px;
+  }
+
+  .down_coins__list {
+    background-color: #222342;
+    border-radius: 10px;
+    z-index: 2;
+    position: absolute;
+    
+    padding: 10px;
+    .down_coins__item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      padding-bottom: 10px;
+      padding: 5px;
+      font-size: 18px;
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.032);
+        border-radius: 10px;
+      }
+    }
+  }
+  
+}

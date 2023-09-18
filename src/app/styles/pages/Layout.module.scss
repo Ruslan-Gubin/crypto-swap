@@ -1,0 +1,28 @@
+.body {
+  height: 100%;
+
+  &::-webkit-scrollbar {
+    background-color: rgb(245, 245, 245);
+    width: 7px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: rgb(200, 200, 200);
+    border-radius: 10px;
+  }
+
+  .container {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .main {
+      flex: 1 1 auto;
+      padding-top: 56px;
+
+      @media (max-width: 540px) {
+       padding-right: 25px;
+       padding-left: 25px;
+      }
+    }
+  }
+}

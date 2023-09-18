@@ -1,0 +1,15 @@
+.root {
+
+  @media (max-width: 990px) {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .link_list {
+      display: flex;
+    }
+  }
+}

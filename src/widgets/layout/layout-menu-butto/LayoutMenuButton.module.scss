@@ -1,0 +1,136 @@
+.menu {
+  border: 1px solid rgba(100, 100, 100, 0.2);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-left: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: rgba(193, 192, 192, 0);
+
+  .menu_close {
+    width: 20px;
+    height: 3px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    position: relative;
+    animation: close-center 0.4s;
+    position: relative;
+    top: 0;
+    left: 0;
+
+    &::after {
+      content: "";
+      top: 7px;
+      position: absolute;
+      left: 0px;
+      width: 20px;
+      height: 3px;
+      background-color: #ffffff;
+      border-radius: 5px;
+      animation: close-top 0.4s;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: -7px;
+      left: 0px;
+      width: 20px;
+      height: 3px;
+      background-color: #ffffff;
+      border-radius: 5px;
+      animation: close-bottom 0.4s;
+    }
+  }
+  &_separator {
+    width: 3px;
+    height: 18px;
+    background-color: #1E1B38;
+    position: absolute;
+    top: 14px;
+    left: 16px;
+    animation: separator 1s;
+  }
+
+  .menu_open__top {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    animation: open 0.4s;
+    rotate: (45deg);
+  }
+
+  .menu_open__bottom {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    animation: open-bottom 0.4s;
+    rotate: (-45deg);
+  }
+}
+
+@keyframes open {
+  0% {
+    rotate: (0deg);
+  }
+  100% {
+    rotate: (45deg);
+  }
+}
+@keyframes open-bottom {
+  0% {
+    rotate: (0deg);
+  }
+  100% {
+    rotate: (-45deg);
+  }
+}
+@keyframes close {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes close-center {
+  0% {
+    left: -30px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+@keyframes close-top {
+  0% {
+    left: -50px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+@keyframes close-bottom {
+  0% {
+    left: 10px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+@keyframes separator {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

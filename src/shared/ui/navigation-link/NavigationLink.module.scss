@@ -1,0 +1,22 @@
+.link {
+  color: white;
+  padding-right: 20px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  opacity: 0.7;
+  
+  &:hover {
+    color: rgb(255, 255, 255);
+    opacity: 1;
+  }
+}
+
+.active {
+  color: #40a5f3;
+  font-weight: 700;
+  opacity: 1;
+  &:hover {
+    color: #40a5f3;
+  }
+}

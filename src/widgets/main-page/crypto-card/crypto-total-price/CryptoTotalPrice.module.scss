@@ -1,0 +1,18 @@
+.total_price {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+
+  border-radius: 10px;
+  background: #ffffff15;
+  color: rgba(255, 255, 255, 0.645);
+  p {
+    padding: 0 5px;
+    padding-left: 10px;
+  }
+  span {
+    color: #40a5f3;
+  }
+}

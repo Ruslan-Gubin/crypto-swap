@@ -1,0 +1,36 @@
+.root {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+  
+  .value {
+    display: flex;
+    align-items: center;
+    background-color: #222342;
+    padding: 7px 6px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    cursor: pointer;
+    span {
+      padding: 0 4px;
+    }
+  }
+  .down_container {
+    cursor: pointer;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    background-color: #1A1830;
+    padding: 10px;
+    li {
+      padding-top: 10px;
+    }
+
+    .active {
+      color: #40A5F3;
+    }
+  }
+  }

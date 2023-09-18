@@ -1,0 +1,19 @@
+.options_list {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+  &__item {
+    padding-right: 14px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    cursor: pointer;
+    opacity: 0.3;
+  }
+  &__active {
+    color: white;
+    font-weight: 600;
+    opacity: 1;
+  }
+}
